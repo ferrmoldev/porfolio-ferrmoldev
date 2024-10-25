@@ -1,0 +1,30 @@
+---
+import ExperienceItem from "./ExperienceItem.astro";
+
+const EXPERIENCE = [
+  {
+    title: "Desarrollador Flutter",
+    date: "Actualmente...",
+    company: "Freelance",
+    description:
+      "Especializado en crear aplicaciones enfocadas en oposiciones, facilitando el estudio y la preparación con funcionalidades personalizadas, como test interactivos, seguimiento de progreso y recursos organizados.",
+  },
+  {
+    title: "Ingeniero de Software",
+    date: "Septiembre 2020 - Actualmente",
+    company: "Adif",
+    description:
+      "Gestión y coordinación del desarrollo y del soporte técnico de aplicaciones informáticas para el mantenimiento de infraestructuras ferroviarias.",
+  },
+];
+---
+
+<ol class="relative mt-16">
+  {
+    EXPERIENCE.map((experience) => (
+      <li class="">
+        <ExperienceItem {...experience} />
+      </li>
+    ))
+  }
+</ol>
